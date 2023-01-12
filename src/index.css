@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --bodyBg: #23252C;
+  --mainBg: #1A1B21;
+  --brownishYellow: #F3BF99;
+  --linkedinBlue: #5093E2;
+  --iconsColor: #918E9B;
+  --utilityBlack: #374151;
+  --footerBg: #161619;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bodyBg);
+  color: white;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  margin: 1rem auto;
+  max-width: 500px;
+  border-radius: 1rem;
+}
+
+main, footer {
+  padding: 2.4rem 3.4rem;
+  text-align: center;
+}
+
+main {
+  background: var(--mainBg);
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+main h4 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  margin-top: 1.2rem;
+  color: var(--brownishYellow);
+}
+
+main p {
+  font-size: 1.03rem;
+  line-height: 1.5rem;
+  margin-block: 2rem;
+}
+
+footer {
+  background: var(--footerBg);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  margin-right: 1rem;
+  /* max-width: 15rem; */
+  font-size: 1.4rem;
+  background: white;
+  padding: 0.9rem 1.3rem;
+  border-radius: .5rem;
+}
+
+.btn i {
+  margin-right: 1rem;
+}
+
+#email-btn {
+  color: var(--utilityBlack)
+}
+
+#linkedin-btn {
+  background: var(--linkedinBlue);
+  color: white;
+}
+
+.text-contain {
+  text-align: left;
+  margin-top: 2.5rem;
+}
+
+.icons-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-contain i {
+  color: var(--iconsColor);
+  font-size: 2.5rem;
 }
